@@ -3,7 +3,7 @@ timeout(time: 5, unit: 'MINUTES') {
            def workspace = pwd()
 
            stage("Cleaning workspace") {
-              sh "rm -rf ${workspace}/*"
+              bat "rm -rf ${workspace}/*"
            }
 
            stage('Git pull') {
@@ -12,7 +12,7 @@ timeout(time: 5, unit: 'MINUTES') {
            }
 
            stage('robot'){
-               sh "robot --listener allure_robotframework ${workspace}/Tests"
+               bat "robot --listener allure_robotframework ${workspace}/Tests"
            }
 
            stage('allure'){
