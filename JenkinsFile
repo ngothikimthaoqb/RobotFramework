@@ -12,9 +12,7 @@ timeout(time: 5, unit: 'MINUTES') {
            }
 
            stage('robot'){
-//                sh "robot --listener 'allure_robotframework' ./Tests"
-				sh 'robot allure_robotframework --outputdir ./output/robot ./tests || true'
-				echo 'execute'
+               sh "robot --listener allure_robotframework ${workspace}/Tests"
            }
 
            stage('allure'){
