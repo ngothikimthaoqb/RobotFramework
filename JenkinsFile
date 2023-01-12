@@ -7,7 +7,8 @@ timeout(time: 5, unit: 'MINUTES') {
            }
 
            stage('robot'){
-               bat "robot --listener allure_robotframework ${workspace}/Tests"
+               bat "cd ${workspace}"
+               bat "robot --listener allure_robotframework ./Tests"
            }
 
            stage('allure'){
