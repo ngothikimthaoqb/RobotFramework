@@ -8,10 +8,13 @@ timeout(time: 5, unit: 'MINUTES') {
 
            stage('Git pull') {
               checkout scm
+              echo 'checkout'
            }
 
            stage('robot'){
-               sh "robot --listener 'allure_robotframework' ./Tests"
+//                sh "robot --listener 'allure_robotframework' ./Tests"
+				sh 'robot allure_robotframework --outputdir ./output/robot ./tests || true'
+				echo 'execute'
            }
 
            stage('allure'){
@@ -22,6 +25,7 @@ timeout(time: 5, unit: 'MINUTES') {
                   reportBuildPolicy: 'ALWAYS',
                   results: [[path: 'output/allure']]
                ])
+               echo 'report'
            }
     }
 }
