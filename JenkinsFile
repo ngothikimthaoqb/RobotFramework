@@ -8,6 +8,7 @@ timeout(time: 5, unit: 'MINUTES') {
 
            stage('robot'){
                bat "cd ${workspace}"
+               bat "pip install allure-robotframework"
                bat "robot --listener allure_robotframework ./Tests"
            }
 
