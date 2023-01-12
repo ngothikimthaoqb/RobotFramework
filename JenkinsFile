@@ -1,11 +1,6 @@
 timeout(time: 5, unit: 'MINUTES') {
     node {
            def workspace = pwd()
-
-           stage("Cleaning workspace") {
-              bat "del *.*"
-           }
-
            stage('Git pull') {
               checkout scm
               echo 'checkout'
