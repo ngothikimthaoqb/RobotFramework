@@ -3,7 +3,7 @@ timeout(time: 5, unit: 'MINUTES') {
            def workspace = pwd()
 
            stage("Cleaning workspace") {
-              bat "rm -rf ${workspace}/*"
+              bat "del *.*"
            }
 
            stage('Git pull') {
