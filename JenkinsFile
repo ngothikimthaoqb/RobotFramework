@@ -18,7 +18,7 @@ timeout(time: 5, unit: 'MINUTES') {
                   includeProperties: false,
                   jdk: '',
                   reportBuildPolicy: 'ALWAYS',
-                  results: [[path: 'output/allure']]
+                  results: [[path: '${workspace}/output/allure']]
                ])
                echo 'report'
            }
