@@ -5,7 +5,7 @@ Resource    ../Page_Objects/Login_Keyword.robot
 Resource    ../Test_Data/Config_Data.robot
 Resource    ../Test_Data/Account_Data.robot
 
-Test Setup  Open Shopee homepage    ${URL}    Chrome
+Test Setup  Open Shopee homepage    ${URL}    ${BROWSER}
 Test Teardown    Close Browser
 
 *** Variables ***
