@@ -1,6 +1,6 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables   ../pageObjects/HomePageUI.py
+Variables   ../page_objects/home_page_ui.py
 
 *** Keywords ***
 Open Shopee homepage

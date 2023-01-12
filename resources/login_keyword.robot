@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables   ../pageObjects/LoginPageUI.py
-Variables   ../pageObjects/HomePageUI.py
+Variables   ../page_objects/login_page_ui.py
+Variables   ../page_objects/home_page_ui.py
 
 *** Keywords ***
 Login

@@ -3,7 +3,6 @@ timeout(time: 5, unit: 'MINUTES') {
            def workspace = pwd()
            stage('Git pull') {
               checkout scm
-              echo 'checkout'
            }
 
 			try{
@@ -24,7 +23,6 @@ timeout(time: 5, unit: 'MINUTES') {
                   reportBuildPolicy: 'ALWAYS',
                   results: [[path: 'output/allure']]
                ])
-               echo 'report'
            }
     }
 }
