@@ -1,6 +1,0 @@
-login_link = "xpath://a[text()='Đăng Nhập']"
-username_or_email_input = "xpath://input[@name='loginKey']"
-password_input = "xpath://input[@name='password']"
-login_button = "xpath://button[text()='Đăng nhập']"
-username_label = "xpath://div[@class='navbar__username']"
-login_error_message = "xpath://div[text()='Tên tài khoản của bạn hoặc Mật khẩu không đúng, vui lòng thử lại']"

@@ -1,13 +1,13 @@
 timeout(time: 5, unit: 'MINUTES') {
     node {
-           def workspace = pwd()
+            def workspace = pwd()
             stage('Clean workspace') {
               deleteDir()
-           }
+            }
 
-           stage('Git pull') {
+            stage('Git pull') {
               checkout scm
-           }
+            }
 
 			try{
 			    stage('robot'){
@@ -19,7 +19,7 @@ timeout(time: 5, unit: 'MINUTES') {
 				echo e.toString()
 			}
 
-           stage('allure'){
+            stage('allure'){
                allure([
                   disabled: false,
                   includeProperties: false,
@@ -27,6 +27,6 @@ timeout(time: 5, unit: 'MINUTES') {
                   reportBuildPolicy: 'ALWAYS',
                   results: [[path: 'output/allure']]
                ])
-           }
+            }
     }
 }

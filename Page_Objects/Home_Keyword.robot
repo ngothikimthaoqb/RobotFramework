@@ -1,6 +1,8 @@
 *** Settings ***
 Library     SeleniumLibrary
-Variables   ../page_objects/home_page_ui.py
+
+*** Variables ***
+${close_button}     dom:document.querySelector('shopee-banner-popup-stateful').shadowRoot.querySelector('.shopee-popup__close-btn')
 
 *** Keywords ***
 Open Shopee homepage
