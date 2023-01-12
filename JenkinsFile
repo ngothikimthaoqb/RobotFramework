@@ -1,6 +1,10 @@
 timeout(time: 5, unit: 'MINUTES') {
     node {
            def workspace = pwd()
+            stage('Clean workspace') {
+              deleteDir()
+           }
+
            stage('Git pull') {
               checkout scm
            }
