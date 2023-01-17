@@ -4,9 +4,9 @@
 ### 1. Clone the Project at [RobotFramework](https://github.com/ngothikimthaoqb/RobotFramework)
 ### 2. Installation instructions
 - Python installation
-    [Installing Python on Linux](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-linux)
-    [Installing Python on Windows](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-windows)
-    [Installing Python on macOS](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-macos)
+    - [Installing Python on Linux](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-linux)
+    - [Installing Python on Windows](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-windows)
+    - [Installing Python on macOS](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-python-on-macos)
 - Installing using pip
     ```bash
     $ pip install robotframework
